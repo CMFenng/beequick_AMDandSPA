@@ -1,0 +1,330 @@
+/* 购物车 */
+#shopCart{
+    color: #333;
+    font-size: 0.4375rem;
+}
+
+/* 头部 */
+#shopCart #header{
+    width: 100%;
+    height: 1.6875rem;
+    border-bottom: 0.03125rem solid #e0e0e0;
+    background-color: #f9fafd;
+    position: relative;
+}
+
+#shopCart #headerTitle{
+    text-align: center;
+    line-height: 1.6875rem;
+    color: #333;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2.25rem;
+    right: 2.25rem;
+    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*=================================================*/
+/* 滚动的可视区域 */
+/* 该元素以 body 为基准，将滚动的可视区域填充除 header 之外的 body 部分 */
+#shopCart #scroller{
+    width: 100%;
+    position: absolute;
+    top: 1.71875rem;
+    bottom: 0;
+    background-color: #efefef;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#shopCart #hopCart_content{
+    width: 100%;
+}
+/*=================================================*/
+/* 信息栏 */
+#shopCart #myInfo{
+    margin-bottom: 0.375rem;
+    background-color: #fff;
+    font-size: 0.4375rem;
+    color: #333;
+}
+
+#shopCart #myInfo table{
+    width: 100%;
+    line-height: 0.525rem;
+    background-image: url(../../img/myInfoBgTop.png), url(../../img/myInfoBgBottom.png);
+    background-repeat: repeat-x;
+    background-position: left top, left bottom;
+    background-size: auto 0.1125rem;
+}
+
+#shopCart #myInfo tbody{
+    width: 100%;
+}
+
+#shopCart #myInfo th{
+    padding: 0.2625rem 0.375rem 0.2625rem 0.5625rem;
+    font-weight: 400;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+#shopCart #myInfo td{
+    padding: 0.2625rem 0;
+}
+
+#shopCart #myInfo .more{
+    vertical-align: middle;
+    background: url(../../img/more.png) no-repeat right center;
+    background-size: auto 0.375rem;
+}
+
+#shopCart #myInfo .hidden{
+    visibility: hidden;
+}
+/*=================================================*/
+/* 凑单专区 */
+#shopCart #addOnItem{
+    width: 100%;
+    padding-top: 0.1875rem;
+    background-color: #fff;
+    font-size: 0.375rem;
+    position: relative;
+}
+
+#shopCart #addOnName{
+    height: 1.125rem;
+    padding-left: 0.525rem;
+    color: #999;
+    line-height: 0.75rem;
+}
+
+#shopCart #addOnName:before{
+    content: "";
+    display: inline-block;
+    width: 0.149906rem;
+    height: 0.449718rem;
+    border-radius: 0.075rem;
+    margin-right: 0.1875rem;
+    background-color: #ffd600;
+    vertical-align: -0.0375rem;
+}
+
+#shopCart #addOnBtn{
+    width: 2.625rem;
+    height: 0.899906rem;
+    border: 0.03125rem solid #ff3800;
+    border-radius: 0.45rem;
+    color: #e64f1a;
+    text-align: center;
+    line-height: 0.899906rem;
+    position: absolute;
+    right: 0.525rem;
+    top: 0.1875rem;
+}
+
+#shopCart #propText{
+    padding-left: 0.525rem;
+    color: #999;
+    line-height: 0.75rem;
+    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*=================================================*/
+/* 收货时间 */
+#shopCart #receiveTime{
+    padding-left: 0.525rem;
+    padding-right: 0.9375rem;
+    border-top: 0.03125rem solid #e0e0e0;
+    background: #fff url(../../img/more.png) no-repeat right center;
+    background-size: auto 0.375rem;
+    line-height: 1.875rem;
+    
+    position: relative;
+}
+
+#shopCart #receiveExt{
+    float: right;
+}
+
+#shopCart #receiveSelect{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: absolute;
+    left: 0;
+    
+    opacity: 0;
+    outline: 0;
+}
+
+#shopCart #receiveSelect option{
+    font-size: 0.43624rem;
+}
+
+#shopCart #receiveSelectText{
+    color: #e64f1a;
+}
+/*=================================================*/
+/* 收货备注 */
+#shopCart #receiveComment{
+    padding-left: 0.525rem;
+    border-top: 0.03125rem solid #e0e0e0;
+    border-bottom: 0.03125rem solid #e0e0e0;
+    background-color: #fff;
+    line-height: 1.875rem;
+    position: relative;
+}
+
+#shopCart #commentWrap{
+    position: absolute;
+    top: 0;
+    right: 0.825rem;
+    bottom: 0;
+    left: 3rem;
+}
+
+#shopCart #commentInput{
+    width: 100%;
+    height: 1.199718rem;
+    padding: 0;
+    border: 0.03125rem solid #cecece;
+    border-radius: 0.1875rem;
+    margin-left: 0.1125rem;
+    text-indent: 0.1875rem;
+    font-size: 100%;
+    outline: 0;
+}
+
+/*=================================================*/
+/* 购物车物品列表 */
+#shopCart #shopCartList{
+    width: 100%;
+}
+
+#shopCart .listItem{
+    border-bottom: 0.03125rem solid #e0e0e0;
+    background-color: #fff;
+    line-height: 1.5rem;
+}
+
+#shopCart .itemCheckbox{
+    width: 1.875rem;
+    background: url(../../img/checkbox.png) no-repeat center;
+    background-size: 0.675rem 0.675rem;
+}
+
+#shopCart .itemImgWrap{
+    width: 1.875rem;
+    height: 1.875rem;
+    position: absolute;
+    top: 0.5625rem;
+}
+
+#shopCart .itemImg{
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+#shopCart .itemName, #shopCart .itemPrice{
+    padding-left: 0.525rem;
+    font-size: 0.421875rem;
+    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#shopCart .productOperateWrap{
+    width: 3.75rem;
+    height: 1.875rem;
+    border-radius: 0.4875rem;
+    text-align: center;
+    line-height: 1.875rem;
+    color: #f40;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#shopCart .inner{
+    width: 0.974625rem;
+    height: 0.974625rem;
+    border: 0.03125rem solid #ffbe89;
+    border-radius: 50%;
+    
+    position: absolute;
+    top: 0.418906rem;
+    left: 0.418906rem;
+}
+
+#shopCart .productOperateDel{
+    width: 1.875rem;
+    height: 1.875rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#shopCart .productOperateDel .inner{
+    background: #ff4300 url(../../img/jiaOrjian.png) no-repeat left center;
+    background-origin: border-box;
+    background-size: 200% 100%;
+}
+
+#shopCart .productOperateAmount{
+    width: 2.775rem;
+    height: 1.125rem;
+    padding: 0 0.1125rem;
+    line-height: 1.125rem;
+    color: #333;
+}
+
+#shopCart .productOperateAdd{
+    width: 1.875rem;
+    height: 1.875rem;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#shopCart .productOperateAdd .inner{
+    background: #ff4300 url(../../img/jiaOrjian.png) no-repeat right center;
+    background-origin: border-box;
+    background-size: 200% 100%;
+}
+/*=================================================*/
+/* 确认订单 */
+#shopCart #confirmOrder{
+    padding-left: 0.525rem;
+    margin-bottom: 2.25rem;
+    background-color: #fff;
+    line-height: 1.875rem;
+}
+
+#shopCart #confirmBtn{
+    width: 3.75rem;
+    text-align: center;
+    background-color: gray;
+    float: right;
+}
+
+#shopCart #selectAll{
+    min-width: 1.875rem;
+    padding-left: 0.9375rem;
+    background: url(../../img/checkbox.png) no-repeat left center;
+    background-size: 0.675rem 0.675rem;
+    
+    display: inline-block;
+}
+
+#shopCart #totalMoney{
+    color: #e64f1a;
+}

@@ -1,0 +1,51 @@
+/*底部*/
+#tabBar{
+    width: 10rem;
+    height: 1.875rem;
+    background-color:rgba(246,246,246,1);
+    /*margin-top: 0.375rem;*/
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    
+    /*position: fixed;
+    z-index: 3;
+    top: 17rem;*/
+}
+#tabBar ul{
+    width: 100%;
+    display: flex;
+    /*justify-content: space-around;*/
+    background-color:rgba(246,246,246,1);
+    font-size: 0.3375rem;
+}
+#tabBar ul li{
+    color: #777;
+    list-style: none;
+    /*position: relative;*/
+    margin-left: 1.30625rem; 
+    padding-top: 1.21875rem;
+}
+#tabBar ul li:nth-child(1){
+    background: url(../img/home.png) no-repeat 40% 30%;
+    background-size: 0.6875rem 0.75rem;
+    margin-left: 0.90625rem; 
+}
+#tabBar ul li:nth-child(2){
+    background: url(../img/market.png) no-repeat 40% 30%;
+    background-size: 0.6875rem 0.75rem;
+}
+#tabBar ul li:nth-child(3){
+    background: url(../img/shoppingcar.png) no-repeat 40% 30%;
+    background-size: 0.6875rem 0.75rem;
+}
+#tabBar ul li:nth-child(4){
+    background: url(../img/my.png) no-repeat 40% 30%;
+    background-size: 0.6875rem 0.75rem;
+}
+#tabBar ul li a{
+    padding-top: 1.25rem;
+    text-decoration: none;
+    color: #777;
+}

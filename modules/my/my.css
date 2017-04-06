@@ -1,0 +1,244 @@
+body{
+	background:#EFEFEF;
+}
+#my{
+	/*position: absolute;*/
+}
+/*显示用户信息的黄色部分*/
+#my .top{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+}
+#my .nav{
+	width: 100%;
+	height: 3.75rem;
+	background: #FFD600 url(../../img/denglu.png) no-repeat;
+	background-position: 0.78125rem 0.625rem;
+	background-size: 2.1875rem 2.1875rem;
+}
+#my .nav_user{
+	width: 6.65625rem;
+	height: 2.90625rem;
+	padding: 0.84375rem 0 0 3.34375rem;
+}
+#my .loginName{
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: "微软雅黑";
+}
+#my .grade{
+	/*width: 3.0625rem;
+	height: 1.03125rem;*/
+	width: 2.0625rem;
+	/*height: 0.8467rem;*/
+	height: 1.0467rem;
+	padding-left:1.09375rem;
+	padding-top: 0.34375rem;
+	background: url(../../img/my_logo.png) no-repeat left center;
+	background-clip:padding-box;
+	background-size: 100% auto;
+	line-height:0.8467rem;
+	color: red;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	font-weight: 700;
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+#my .icon-xiangyou{
+	color: white;
+	font-size: 40px;
+	float: right;
+	margin-top: -60px;	
+	margin-right:10px ;
+}
+/*商品、店铺收藏*/
+#my .collection{
+	width: 10rem;
+	height: 1.3125rem;
+	background:#F3C800 ;
+	position: relative;
+}
+#my .goodsCollection{
+	width: 5rem;
+	height: 1.3125rem;
+	position: absolute;
+	/*border-right:1px solid white;*/
+	background:  url(../../img/shoucang.png) no-repeat;
+	background-size: 0.6875rem 0.65625rem;
+	background-position: 1.1875rem 0.34375rem;
+}
+#my .goodsCollection span,#my .shopCollection span{
+	color: white;
+	line-height:1.3125rem;
+	margin-left: 2.28125rem;
+}
+#my .separated{
+	width: 0.03125rem;
+	height: 0.90625rem;
+	border-right: 1px solid white;
+	position: absolute;
+	top: 8px;
+	left: 5rem;
+}
+/*店铺收藏*/
+#my .shopCollection{
+	width: 4.96875rem;
+	height: 1.3125rem;
+	position: absolute;
+	background:  url(../../img/dianpu.png) no-repeat;
+	background-size: 0.6875rem 0.65625rem;
+	background-position: 1.1875rem 0.34375rem;
+	margin-left:4.96875rem ;
+}
+/*我的订单*/
+#my .order_wrap{
+	width: 10rem;
+	/*height: 14.875rem;*/
+	position: absolute;
+	top:5.0625rem;
+	left:0;
+	right:0;
+	bottom:1.875rem;
+	overflow: auto;
+}
+#my .myOrder{
+	width: 10rem;
+	height: 4.15625rem;
+	background: white;
+	position: relative;
+	top: 0.375rem;
+}
+#my .myOrderTop{
+	width: 10rem;
+	height: 1.71875rem;
+	border-bottom: 1px solid #999999;
+	
+}
+#my .myOrderTop span{
+	font-size: 15px;
+	line-height: 1.71875rem;
+}
+#my .myOrderTop .left{
+	margin-left: 0.5625rem;
+}
+#my .myOrderTop .right{
+	margin-left: 3.7625rem;
+	color: #999999;
+}
+#my .icon_xiangyou1{
+	font-size: 24px;
+	line-height:1.71875rem;
+	display: inline-block;
+}	
+/*待付款、待收货。。*/
+#my .myOrderBottomUl li{
+	/*display: inline-block;*/
+	float: left;
+	list-style: none;
+	padding: 0.91875rem 0.25rem 0 0;
+	margin: 0.71875rem 0 0 0.9375rem;
+}
+#my .myOrderBottomUl li:nth-child(1){
+	background: url(../../img/daifukuan.png) no-repeat center top;
+	background-size: 0.625rem 0.59375rem;
+}
+#my .myOrderBottomUl li:nth-child(2){
+	background: url(../../img/daishouhuo.png) no-repeat center top;
+	background-size: 0.625rem 0.59375rem;
+}
+#my .myOrderBottomUl li:nth-child(3){
+	background: url(../../img/daipingjia.png) no-repeat center top;
+	background-size: 0.625rem 0.59375rem;
+}
+#my .myOrderBottomUl li:nth-child(4){
+	background: url(../../img/shouhou.png) no-repeat top center;
+	background-size: 0.625rem 0.59375rem;
+}
+#my .myOrderBottomUl a{
+	text-decoration: none;
+	color: black;
+}
+/*积分商城*/
+#my .shopMarket{
+	width: 10rem;
+	height: 7.53125rem;
+	background: white;
+	position: relative;
+	top: 0.8rem;
+	display: flex;
+}
+#my .shopMarketUl a,#my .shopMarketUl2 a{
+	text-decoration: none;
+	color: black;
+	position: absolute;
+	margin-left: 0.125rem;
+	/*left: 0.3125rem;*/
+	/*text-align: center;*/
+}
+#my .shopMarketUl{
+	width: 100%;
+	height: 3.75rem;
+	border-bottom: 1px solid #999999;
+	display: flex;
+}
+#my .shopMarketUl li{
+	width:55%;
+	float: left;
+	list-style: none;
+	padding: 2.0375rem 1.15625rem 0 0;
+	margin: 0.375rem 0 0 0.53125rem;
+}
+#my .shopMarketUl li:nth-child(1){
+	background:url(../../img/jifenshangcheng.png) no-repeat 40% 30%;
+	background-size: 1.1125rem 1.01875rem;
+	/*justify-content: space-around;*/
+}
+#my .shopMarketUl li:nth-child(2){
+	background:url(../../img/youhuiquan.png) no-repeat 40% 30%;
+	background-size: 1.1125rem 1.01875rem;	
+}
+#my .shopMarketUl li:nth-child(3){
+	background:url(../../img/shouhuoaddress.png) no-repeat 40% 30%;
+	background-size: 1.1125rem 1.01875rem;	
+}
+#my .shopMarketUl li:nth-child(4){
+	background:url(../../img/kefu.png) no-repeat 40% 30%;
+	background-size: 1.1125rem 1.01875rem;	
+}
+#my .shopMarketUl2{
+	width: 100%;
+	height: 3.75rem;
+	position: absolute;
+	top: 3.75rem;
+	list-style: none;
+}
+#my .shopMarketUl2 li{
+	background:url(../../img/guanyu.png) no-repeat 3% 50%;
+	background-size: 1.1125rem 1.01875rem;	
+	padding: 2.0375rem 1.15625rem 0 0;
+	margin: 0.375rem 0 0 0.53125rem;
+}
+/*退出当前账号*/
+#my .logout{
+	width: 10rem;
+	height: 1.6875rem;
+	font-size: 0.4375rem;
+	position: relative;
+	top: 1.85625rem;
+	text-align: center;
+	background: white;
+	line-height:1.6875rem;
+}
+
+#my .white-space{
+	height:1.6875rem;
+}

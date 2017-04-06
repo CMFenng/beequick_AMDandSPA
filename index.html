@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- 理想视口 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <title>Title</title>
+    <!-- 初始化样式表 -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <!-- 字体图标 -->
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_ioa46x5el8fr.css"/>
 </head>
 <body>
+<!-- 单页应用切换所用到的容器 -->
+<div id="container">
+    
+</div>
 
+<!-- 公共底部 -->
+<footer id="tabBar">
+    <ul>
+        <li><a href="#home">首页</a></li>
+        <li><a href="#market">闪送超市</a></li>
+        <li><a href="#cart">购物车</a></li>
+        <li><a href="#my">我的</a></li>
+    </ul>
+</footer>
+<!-- AMD 依赖库，入口是 main.js -->
+<script type="text/javascript" src="lib/require.js" data-main="main"></script>
+<!-- 适配屏幕 -->
+<script type="text/javascript" src="lib/flexible.js"></script>
 </body>
 </html>

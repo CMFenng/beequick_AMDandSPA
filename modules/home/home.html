@@ -1,0 +1,75 @@
+<!-- 首页 -->
+<div id="home">
+    <div id="home_header"></div>
+    <!-- 滚动的可视区域 -->
+    <div id="scroller">
+        <div id="home_content">
+            <!-- 轮播图容器 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- 模板：轮播图图片 -->
+                </div>
+                <!-- 分页器容器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <!-- 主题列表 -->
+            <ul id="themeUl">
+                <!-- 模板：主题列表 -->
+            </ul>
+            
+            <!-- 种类列表 -->
+            <ul id="categoryUl">
+                <!-- 模板：种类列表 -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 模板：轮播图图片 -->
+<script type="text/template" id="banner_tpl">
+    <% for (var img of imgArr) { %>
+        <div class="swiper-slide"><img src="<%= img %>"/></div>
+    <% } %>
+</script>
+<!-- 模板：主题列表 -->
+<script type="text/template" id="theme_tpl">
+    <% for (var theme of themeArr) { %>
+        <li class="themeItemLi">
+            <div class="themeItemImg" style="background-image: url(<%= theme.url %>);"></div>
+            <p class="themeItemName"><%= theme.themeName %></p>
+        </li>
+    <% } %>
+</script>
+<!-- 模板：种类列表 -->
+<script type="text/template" id="category_tpl">
+    <% for (var i = 0; i < 5; i++) { %>
+        <li class="categoryItemLi">
+            <div class="categoryItemHeader">
+                <span class="headerTitle">牛奶面包</span>
+                <span class="headerMore">更多<span class="moreSpace"></span></span>
+            </div>
+            <div class="categoryItemBanner" style="background-image: url(http://img01.bqstatic.com//upload/activity/2016090718042575.jpg@90Q.jpg);"></div>
+            <ul class="categoryItemGoodUl">
+                <% for (var j = 0; j < 3; j++) { %>
+                    <li class="productItemLi">
+                        <div class="product">
+                            <div class="productImg" style="background-image: url(img/weitaMilk.jpg);"></div>
+                            <div class="productName">维他奶原味豆奶</div>
+                            <div class="productPromotion">&nbsp;</div>
+                            <div class="productSpecifics">250ml</div>
+                            <div class="productPrice">
+                                <span class="currentPrice">￥3</span>
+                            </div>
+                            <div class="productOperates">
+                                <span class="productAdd">
+                                    <span class="inner"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                <% } %>
+            </ul>
+        </li>
+    <% } %>
+</script>

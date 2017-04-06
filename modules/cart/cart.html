@@ -1,0 +1,140 @@
+<div id="shopCart">
+    <div id="header">
+        <div id="headerTitle">购物车</div>
+    </div>
+    <!-- 滚动的可视区域 -->
+    <div id="scroller">
+        <div id="shopCart_content">
+            <!-- 收货信息 -->
+            <div id="myInfo">
+                <table class="addrTable" >
+                    <tbody>
+                        <tr>
+                            <th width="28%">收<span class="hidden">a</span>货<span class="hidden">a</span>人</th>
+                            <td>陈明锋&nbsp;先生</td>
+                            <td width="17%" rowspan="3" class="more">修改</td>
+                        </tr>
+                        <tr>
+                            <th>电<span class="hidden">中中</span>话</th>
+                            <td>13450123205</td>
+                        </tr>
+                        <tr>
+                            <th>收货地址</th>
+                            <td>深圳市深圳市民中心 育知同创</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 凑单专区 -->
+            <div id="addOnItem">
+                <div id="addOnName">闪送超市</div>
+                <span id="addOnBtn">凑单专区</span>
+                <p id="propText">¥0起送，22:00前满¥30免运费，22:00后满¥50免运费</p>
+            </div>
+            <!-- 收货时间 -->
+            <p id="receiveTime">收货时间&nbsp;&nbsp;
+                <span id="receiveExt">&nbsp;可预定</span>
+                <select id="receiveSelect">
+                    <optgroup label="今天">
+                        <option value="一小时送达" selected="">一小时送达</option>
+                        <option value="09:00-10:00">09:00-10:00</option>
+                        <option value="10:00-11:00">10:00-11:00</option>
+                        <option value="11:00-12:00">11:00-12:00</option>
+                        <option value="12:00-13:00">12:00-13:00</option>
+                        <option value="13:00-14:00">13:00-14:00</option>
+                        <option value="14:00-15:00">14:00-15:00</option>
+                        <option value="15:00-16:00">15:00-16:00</option>
+                        <option value="16:00-17:00">16:00-17:00</option>
+                        <option value="17:00-18:00">17:00-18:00</option>
+                        <option value="18:00-19:00">18:00-19:00</option>
+                        <option value="19:00-20:00">19:00-20:00</option>
+                        <option value="20:00-21:00">20:00-21:00</option>
+                        <option value="21:00-22:00">21:00-22:00</option>
+                        <option value="22:00-23:00">22:00-23:00</option>
+                        <option value="23:00-24:00">23:00-24:00</option>
+                    </optgroup>
+                    <optgroup label="明天">
+                        <option value="明天 09:00-10:00">09:00-10:00</option>
+                        <option value="明天 10:00-11:00">10:00-11:00</option>
+                        <option value="明天 11:00-12:00">11:00-12:00</option>
+                        <option value="明天 12:00-13:00">12:00-13:00</option>
+                        <option value="明天 13:00-14:00">13:00-14:00</option>
+                        <option value="明天 14:00-15:00">14:00-15:00</option>
+                        <option value="明天 15:00-16:00">15:00-16:00</option>
+                        <option value="明天 16:00-17:00">16:00-17:00</option>
+                        <option value="明天 17:00-18:00">17:00-18:00</option>
+                        <option value="明天 18:00-19:00">18:00-19:00</option>
+                        <option value="明天 19:00-20:00">19:00-20:00</option>
+                        <option value="明天 20:00-21:00">20:00-21:00</option>
+                        <option value="明天 21:00-22:00">21:00-22:00</option>
+                        <option value="明天 22:00-23:00">22:00-23:00</option>
+                        <option value="明天 23:00-24:00">23:00-24:00</option>
+                    </optgroup>
+                    <optgroup label="后天">
+                        <option value="后天 09:00-10:00">09:00-10:00</option>
+                        <option value="后天 10:00-11:00">10:00-11:00</option>
+                        <option value="后天 11:00-12:00">11:00-12:00</option>
+                        <option value="后天 12:00-13:00">12:00-13:00</option>
+                        <option value="后天 13:00-14:00">13:00-14:00</option>
+                        <option value="后天 14:00-15:00">14:00-15:00</option>
+                        <option value="后天 15:00-16:00">15:00-16:00</option>
+                        <option value="后天 16:00-17:00">16:00-17:00</option>
+                        <option value="后天 17:00-18:00">17:00-18:00</option>
+                        <option value="后天 18:00-19:00">18:00-19:00</option>
+                        <option value="后天 19:00-20:00">19:00-20:00</option>
+                        <option value="后天 20:00-21:00">20:00-21:00</option>
+                        <option value="后天 21:00-22:00">21:00-22:00</option>
+                        <option value="后天 22:00-23:00">22:00-23:00</option>
+                        <option value="后天 23:00-24:00">23:00-24:00</option>
+                    </optgroup>
+                </select>
+                <span id="receiveSelectText">一小时送达</span>
+            </p>
+            <!-- 收货备注 -->
+            <div id="receiveComment">收货备注&nbsp;&nbsp;
+                <div id="commentWrap">
+                    <input type="text" id="commentInput" maxlength="100" placeholder="可输入100字以内特殊要求内容"/>
+                </div>
+            </div>
+            <!-- 购物车物品列表 -->
+            <table id="shopCartList">
+                <tbody>
+                    <!-- 模板：购物车物品列表 -->
+                </tbody>
+            </table>
+            <!-- 确认订单 -->
+            <div id="confirmOrder">
+                <div id="confirmBtn">满￥0起送</div>
+                <span id="selectAll">全选</span>共：
+                <span id="totalMoney">￥0</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 模板：购物车物品列表 -->
+<script type="text/template" id="shopCartList_tpl">
+    <% for (var i = 0; i < 5; i++) { %>
+        <tr class="listItem">
+            <td class="itemCheckbox"></td>
+            <td style="width:1.875rem; position: relative;">
+                <div class="itemImgWrap">
+                    <div class="itemImg" style="background-image: url(img/weitaMilk.jpg)"></div>
+                    <div class="maskText"></div>
+                </div>
+            </td>
+            <td style="position: relative;">
+                <div class="itemName">维他奶原味豆奶</div>
+                <div class="itemPrice">￥3</div>
+                <div class="productOperateWrap">
+                    <span class="productOperateDel">
+                        <span class="inner"></span>
+                    </span>
+                    <span class="productOperateAmount">7</span>
+                    <span class="productOperateAdd">
+                        <span class="inner"></span>
+                    </span>
+                </div>
+            </td>
+        </tr>
+    <% } %>
+</script>
