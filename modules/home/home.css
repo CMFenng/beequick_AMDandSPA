@@ -14,6 +14,7 @@
 
 #home #home_content{
     width: 100%;
+    margin-bottom: 1.875rem;
 }
 /*==========================================================*/
 /* 轮播图 */
@@ -119,10 +120,6 @@
 #home .categoryItemLi:nth-of-type(3) .headerTitle{
     color: #9E00A6;
     border-color: #9E00A6;
-}
-/* 避免被底部菜单挡住 */
-#home .categoryItemLi:last-of-type{
-    margin-bottom: 2.25rem
 }
 
 #home .headerMore{
@@ -235,4 +232,116 @@
     position: absolute;
     top: 0.418906rem;
     left: 0.418906rem;
+}
+/*==========================================================*/
+/* 先锋热卖 */
+#home .title{
+    width:100%;
+    font-size: 0.38rem;
+    line-height: 0.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#home .best,#home .maizeng{
+    display: inline-block;
+    padding:0 0.1rem;
+    border-radius:0.1rem;
+    
+}
+#home .best{
+    border:1px solid red;
+    color:red;
+}
+#home .maizeng{
+    background:red;
+    color:white;
+    margin-left: 0.1rem;
+}
+#home .weight{
+    color:#777;
+    line-height: 0.6rem;
+    font-size: 0.38rem;
+}
+#home .now_price{
+    font-size: 0.35rem;
+    color:red;
+}
+#home .original_price{
+    font-size: 0.35rem;
+    color:#777;
+    text-decoration: line-through;
+}
+#home .add{
+    display: block;
+    position: absolute;
+    right:0.1rem;
+    bottom:0;
+    width:0.75rem;
+    height:0.75rem;
+    background:#ff4300 url(../../img/jiaOrjian.png) right center;
+    background-size: 200% auto;
+    font-size: 0;
+    border-radius:50%;
+    border:0.02rem solid #DDD;
+}
+
+#home #hot{
+    margin:0.6rem 0 0;
+    background:#EFEFEF;
+    text-decoration: none;
+}
+
+#home #hot a{
+    text-decoration: none;
+    color: #000;
+}
+
+#home #hot_title{
+    height:1px;
+    width:100%;
+    background:#E4E4E4;
+    position: relative;
+    margin-bottom: 0.3rem;
+}
+
+#home #hot_title span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    padding:0 0.2rem;
+    background:#EFEFEF;
+    font-size: 0.4rem;
+    transform: translate(-50%,-50%);
+}
+
+
+
+#home #hot_content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#home #hot_content .hot_content_item{
+    width:48%;
+    background:white;
+    position: relative;
+    margin-bottom: 0.45rem;
+}
+#home #hot_content .hot_content_item img{
+    width:100%;
+}
+
+#home #hot_content .hot_content_item .add{
+    right:0.2rem;
+    bottom:0.2rem;
+}
+
+#home #hot #hot_last{
+    display: block;
+    height:1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.45rem;
+    color:#777;
 }

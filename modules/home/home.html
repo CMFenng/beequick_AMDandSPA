@@ -22,22 +22,33 @@
             <ul id="categoryUl">
                 <!-- 模板：种类列表 -->
             </ul>
+            
+            <!-- 先锋热卖 -->
+            <div class="container" id="hot">
+                <div id="hot_title">
+                    <span>先锋热卖</span>
+                </div>
+                <div id="hot_content" class="content_container">
+                    <!-- 模板：ES6 -->
+                </div>
+                <a href="javascript:0;" id="hot_last">点击查看全部商品></a>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- 模板：轮播图图片 -->
 <script type="text/template" id="banner_tpl">
-    <% for (var img of imgArr) { %>
-        <div class="swiper-slide"><img src="<%= img %>"/></div>
+    <% for (var tempSlide of slide) { %>
+        <div class="swiper-slide"><img src="<%= tempSlide.activity.img %>"/></div>
     <% } %>
 </script>
 <!-- 模板：主题列表 -->
 <script type="text/template" id="theme_tpl">
-    <% for (var theme of themeArr) { %>
+    <% for (var tempMenu of menu) { %>
         <li class="themeItemLi">
-            <div class="themeItemImg" style="background-image: url(<%= theme.url %>);"></div>
-            <p class="themeItemName"><%= theme.themeName %></p>
+            <div class="themeItemImg" style="background-image: url(<%= tempMenu.activity.img %>);"></div>
+            <p class="themeItemName"><%= tempMenu.activity.name %></p>
         </li>
     <% } %>
 </script>

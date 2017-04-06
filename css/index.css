@@ -1,51 +1,39 @@
-/*底部*/
-#tabBar{
-    width: 10rem;
-    height: 1.875rem;
-    background-color:rgba(246,246,246,1);
-    /*margin-top: 0.375rem;*/
-    position: absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    
-    /*position: fixed;
-    z-index: 3;
-    top: 17rem;*/
-}
+/* 公共底部 */
 #tabBar ul{
     width: 100%;
-    display: flex;
-    /*justify-content: space-around;*/
-    background-color:rgba(246,246,246,1);
-    font-size: 0.3375rem;
+    height: 1.875rem;
+    background-color: rgba(246,246,246,.95);
+    
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: 5;
 }
+
 #tabBar ul li{
+    width: 25%;
+    padding-top: 1.125rem;
+    background-repeat: no-repeat;
+    background-position: center 0.225rem;
+    background-size: auto 0.75rem;
     color: #777;
-    list-style: none;
-    /*position: relative;*/
-    margin-left: 1.30625rem; 
-    padding-top: 1.21875rem;
+    text-align: center;
+    line-height: 0.5625rem;
+    float: left;
 }
-#tabBar ul li:nth-child(1){
-    background: url(../img/home.png) no-repeat 40% 30%;
-    background-size: 0.6875rem 0.75rem;
-    margin-left: 0.90625rem; 
+
+#tabBar a:nth-of-type(1) li{
+    background-image: url(../img/home.png);
 }
-#tabBar ul li:nth-child(2){
-    background: url(../img/market.png) no-repeat 40% 30%;
-    background-size: 0.6875rem 0.75rem;
+
+#tabBar a:nth-of-type(2) li{
+    background-image: url(../img/market.png);
 }
-#tabBar ul li:nth-child(3){
-    background: url(../img/shoppingcar.png) no-repeat 40% 30%;
-    background-size: 0.6875rem 0.75rem;
+
+#tabBar a:nth-of-type(3) li{
+    background-image: url(../img/shoppingcar.png);
 }
-#tabBar ul li:nth-child(4){
-    background: url(../img/my.png) no-repeat 40% 30%;
-    background-size: 0.6875rem 0.75rem;
-}
-#tabBar ul li a{
-    padding-top: 1.25rem;
-    text-decoration: none;
-    color: #777;
+
+#tabBar a:nth-of-type(4) li{
+    background-image: url(../img/my.png);
 }
