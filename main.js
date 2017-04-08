@@ -18,6 +18,6 @@ require.config({
 })
 
 // 注意：当这里导入的不是 jquery 而是 zepto 时，函数的形参不能写，不然会报错
-require(["jquery", "baiduTemplate", "router"], function ($) {
+require(["jquery","baiduTemplate", "router"], function () {
     
 })

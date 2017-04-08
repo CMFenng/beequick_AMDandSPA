@@ -54,9 +54,8 @@ define(["text!./home.html", "../header/header", "$css!./home.css", "lazyload"], 
         function (resultData) {
             var str = ``;
             for (var tempHot of resultData.data) {
-                console.log(tempHot.img);
                 str += `<a href="javascript:0;" class="hot_content_item">
-                            <img src="${ tempHot.img }" alt="" />
+                            <img data-original="${ tempHot.img }" alt="" />
                             <p class="title">${ tempHot.name }</p>
                             <p>
                                 <span class="best">精选</span>
@@ -72,6 +71,8 @@ define(["text!./home.html", "../header/header", "$css!./home.css", "lazyload"], 
             }
             
             $('#hot_content').html(str);
+            console.log($('#hot_content img'));
+            console.log($('#hot_content img').lazyload());
             
             //懒加载, 注意:img 不要设置src属性, 把数据存储在data-original属性中
             $('#hot_content img').lazyload({
