@@ -84,3 +84,30 @@
         </li>
     <% } %>
 </script>
+<script type="text/javascript">
+    //实现购物车抛物线效果
+    $(function(){
+        var offset = $(".productAdd .inner").offset();
+        var shopAddBtn = $(".productAdd .inner");
+        shopAddBtn.click(function(event){
+            //获取当前点击图片链接
+//          var img = $(this).parent().siblings('img').attr(src);
+            var img = "img/weitaMilk.jpg"
+            var flyer = $('<img class="productImg" src="' + img + '">'); //抛物体对象
+            flyer.fly({
+                start: {
+                    left: event.pageX,//抛物体起点横坐标
+                    top: event.pageY //抛物体起点纵坐标
+                },
+                end: {
+                    left: offset.left + 10,//抛物体终点横坐标
+                    top: offset.top + 10, //抛物体终点纵坐标
+                },
+                onEnd: function() {
+                    $("#tip").show().animate({width: '200px'},300).fadeOut(500);////成功加入购物车动画效果
+                    this.destory(); //销毁抛物体
+                }
+            });
+        })
+    })
+</script>
